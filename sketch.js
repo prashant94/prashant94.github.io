@@ -24,7 +24,7 @@ function setup() {
 }
 
 function draw() {
-    background(29,31,33);
+    background(51);
     textFont(font2);
     textSize(36);
     fill(255);
