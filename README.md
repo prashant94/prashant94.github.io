@@ -1,5 +1,7 @@
 Code for my website: [prashantsinha.info](http://prashantsinha.info)
 
+Planning to add Firebase and Mailgun soon!
+
 # Licence
 MIT License
 
