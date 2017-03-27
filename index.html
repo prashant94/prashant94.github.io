@@ -1,21 +1,87 @@
-<html>
+<!DOCTYPE html>
+<html >
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Musings of a Computer Scientist on AI | Graphic Design | Animation | Programming | Science">
-  <meta name="robots" content="noindex">
-  <title>Prashant Sinha</title>       
-    
-  <link rel="stylesheet" href="style.css">
-  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>  
-  <!--<script language="javascript" src="libraries/p5.dom.js"></script>-->
-  <!--<script language="javascript" src="libraries/p5.sound.js"></script>-->
-  <script language="javascript" type="text/javascript" src="sketch.js"></script>
-  <script language="javascript" type="text/javascript" src="vehicle.js"></script>
-
- 
-  <style> body { background-color: #1D1F21; padding: 0; margin: 0;} </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">	
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+  <meta name="theme-color" content="#377D6A">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/img/favicon/manifest.json">
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Prashant Sinha">
+  <meta name="application-name" content="Prashant Sinha">
+  <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#c7c0c0">	
+  <title>Prashant Sinha</title>
+  <meta name="description" content="Musings of a Computer Scientist on AI | Graphic Design | Animation | Programming | Science | Music">
+  <meta property="og:image" content="img/og/og-image.jpg">
+  <meta property="og:image:height" content="391">
+  <meta property="og:image:width" content="748">
+  <meta property="og:description" content="Musings of a Computer Scientist on AI | Graphic Design | Animation | Programming | Science | Music">
+  <meta property="og:title" content="Prashant Sinha">
+  <meta property="og:url" content="https://prashantsinha.info">
+  <link rel="canonical" href="https://prashantsinha.info">	
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjord+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">  
 </head>
 
 <body>
+  <div id="wrapper">
+	  <div id="title">
+      <h2>Prashant Sinha</h2>
+      <h3>Programming | Animation | Graphic Design</h3>
+	  <canvas id="canvas" width="1950px" height="800px"></canvas>
+       <canvas id="canvasbg" width="1950px" height="800px"></canvas>
+  </div>
+
+<div id="bodytext">
+    <h3>Hey There!</h3>
+    <p>I am an avid programmer who doesn't like coffee (suspicious right?). I am also a freelance CGI artist and graphic designer. Check out my blog for the latest posts and tutorials about AI | Machine Learning | Programming | CGI | Science. </p>    
+    <p id="mailtext">If you have a project in mind, or would like to contact me, Lets talk! Drop a mail at: contact@prashantsinha.info</p> 
+    
+	<a href="https://blog.prashantsinha.info" class="btnn">
+  <svg>
+    <rect x="0" y="0" rx="7" ry="7" fill="none" width="166" height="45" />
+  </svg>
+  Blog
+</a>	
+		
+<a href="https://github.com/prashant94" class="btnn">
+  <svg>
+    <rect x="0" y="0" rx="7" ry="7" fill="none" width="166" height="45" />
+  </svg>
+  Github
+</a>			
+    </div>
+    
+<div class="row">
+    <p class="bottom_text">Subscibe to get updates about latest posts!</p>    
+  <span>
+    <input class="gate" id="class" type="text" placeholder="Wizard!" /><label for="class">Name</label>
+  </span>
+  <span>
+    <input class="gate" id="element" type="text" placeholder="Five to choose from" /><label for="element">Email</label>
+  </span>
+  <span>
+		<button>
+  <p id="btn">Subscribe</p>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+    <path id="paper-plane-icon" d="M462,54.955L355.371,437.187l-135.92-128.842L353.388,167l-179.53,124.074L50,260.973L462,54.955z
+M202.992,332.528v124.517l58.738-67.927L202.992,332.528z"></path> 
+  </svg>
+</button>
+		</span>       
+            
+</div>
+
+	</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+
 </body>
 </html>

@@ -1,5 +1,6 @@
 Code for my website: [prashantsinha.info](http://prashantsinha.info)
 
+Not yet optimised for mobile.
 Planning to add Firebase and Mailgun soon!
 
 # Licence
