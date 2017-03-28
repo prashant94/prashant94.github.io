@@ -32,7 +32,7 @@ body {
 
 #title h3 {
   color: #fff;
-  font-size:1.563rem;
+  font-size: 1.563rem;
   font-family: "museo-sans";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;     
@@ -80,7 +80,7 @@ body {
 
 #bodytext h3 {
   color: #fff;
-  font-size: 1.875em;
+  font-size: 1.875rem;
   font-family: "montserrat";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
@@ -258,10 +258,6 @@ button p {
 	margin: 0.625rem;
 }
 
-button svg {
-	
- 	margin: -0.125rem;	
-}
 
 button:hover {
   background-color: #c76c17;
@@ -276,6 +272,7 @@ button svg {
   top: 0.563rem;
   right: 1.563rem;
   height: 1.563rem;
+  margin: -0.125rem;	
   width: auto;
   -webkit-transition: -webkit-transform 0.15s;
   -moz-transition: -moz-transform 0.15s;
@@ -621,7 +618,7 @@ button.clicked svg path {
 }
 .btnn svg {
   position: absolute;
-  top: 0; left: 0;
+  top: 0; left: 0; 
 }
 .btnn svg rect {
   stroke: #377D6A;
@@ -640,8 +637,85 @@ button.clicked svg path {
 @media (min-width:320px)  { 
 /*	 smartphones, iPhone, portrait 480x320 phones */
 	#bodytext {
-    top: 30em;
+    top: 15em;
     width: 80%;
+	}
+    
+	#title h2 {
+		font-size: 2rem;
+	}
+	
+	#title h3 {
+		font-size: 0.938rem;
+	}
+	
+	#bodytext h3 {
+		font-size: 1rem;
+	}
+	#bodytext p {
+		font-size: 0.8rem;
+	}
+	#bodytext #mailtext {
+		font-size: 0.8rem;
+	}
+	
+	.btnn {
+		margin-right: 0.75rem;
+	    margin-left: 0.75rem;
+	    margin-top: 1rem;
+	    margin-bottom: 1rem;
+		width: 6rem;
+		height: 1.5rem;
+		font-size: 0.6rem;
+	    line-height: 1.8rem;
+	}
+	
+	.btnn svg rect {
+		stroke-width: 3;
+		stroke-dasharray: 100, 0;
+		stroke-dashoffset: 0;
+	}
+
+	
+	.row {
+		top: 28em;
+	}
+	
+	.row .bottom_text{
+		font-size: 0.8rem;
+	}
+	.row span {
+		margin: 0.8rem;
+	}
+	.row .gate {
+		width: 7.1rem;
+		height: 0.55rem;
+  		padding: 0.625rem 0 0.625rem 0.938rem;
+		text-indent: 2.6rem;
+	}
+	.gate + label {
+		font-size: 0.5rem;	
+		padding: 0.625rem 0.938rem;
+	}
+	
+	
+	span:nth-child(2) .gate {
+  		text-indent: 2.6rem;
+	}
+
+    button {
+	  font-size: 0.6rem;
+	  line-height: 0.4rem;	
+	  padding-right: 1.875rem;
+	  height: 1.8rem;	
+	  width: 8rem;
+	}
+	
+	button svg {
+		top: 0.3rem;
+		right: 1.2rem;
+		height: 1.3rem;
+        margin: 0rem;
 	}
 
 }
@@ -702,5 +776,80 @@ button.clicked svg path {
     top: 50%;
     width: 50%;
 	}
-	 
+    
+	#title h2 {
+		font-size: 2.813rem;
+	}
+	
+	#title h3 {
+		font-size: 1.563rem;
+	}
+	
+	#bodytext h3 {
+		font-size: 1.875rem;
+	}
+	#bodytext p {
+		font-size: 1rem;
+	}
+	#bodytext #mailtext {
+		font-size: 1rem;
+	}
+	
+	.btnn {
+		margin-right: 3.125rem;
+  		margin-left: 3.125rem;
+  		margin-top: 1.875rem;
+  		margin-bottom: 3.125rem;
+		width: 10.375rem;
+  		height: 2.813rem;
+  		font-size: 0.750rem;
+  		line-height: 2.813rem;
+	}
+	
+	.btnn svg rect {
+		stroke-width: 4;
+		stroke-dasharray: 422, 0;
+		stroke-dashoffset: 0;
+	}
+
+	
+	.row {
+		top: 85%;
+	}
+	
+	.row .bottom_text{
+		font-size: 1rem;
+	}
+	.row span {
+		margin: 1.875rem;
+	}
+	.row .gate {
+		width: 14.375rem;
+		height: 1.15rem;
+  		padding: 0.625rem 0 0.625rem 0.938rem;
+		text-indent: 4.063rem;
+	}
+	.gate + label {
+		font-size: 1rem;	
+		padding: 0.625rem 0.938rem;
+	}
+	
+	
+	span:nth-child(2) .gate {
+  		text-indent: 5.313rem;
+	}
+
+    button {
+	  font-size: 0.938rem;	
+	  padding-right: 1.875rem;
+	  height: 2.500rem;	
+	  width: 12.500rem;
+	}
+	
+	button svg {
+		top: 0.563rem;
+		right: 1.563rem;
+		height: 1.563rem;
+        margin: -0.125rem;
+	}
 }
