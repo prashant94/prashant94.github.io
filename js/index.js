@@ -128,6 +128,12 @@ function draw() {
   }
   var ctxfr = document.getElementById('canvas').getContext('2d');
   var ctxbg = document.getElementById('canvasbg').getContext('2d');
+	
+  ctxfr.canvas.width  = window.innerWidth;
+  ctxfr.canvas.height = window.innerHeight;
+	
+  ctxbg.canvas.width  = window.innerWidth;
+  ctxbg.canvas.height = window.innerHeight;
 
   ctxfr.globalCompositeOperation = 'destination-over';
   ctxfr.clearRect(0, 0, canvas.width, canvas.height); // clear canvas
