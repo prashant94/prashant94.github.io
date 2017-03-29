@@ -636,6 +636,11 @@ button.clicked svg path {
 
 @media (min-width:320px)  { 
 /*	 smartphones, iPhone, portrait 480x320 phones */
+	
+	body {
+		overflow: hidden;
+		overflow-x: hidden;
+	}
 	#bodytext {
     top: 15em;
     width: 80%;
