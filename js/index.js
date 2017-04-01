@@ -39,7 +39,7 @@ var circleExp = 1,
   circleExpSp = 0.00004,
   circlePulse = false;
 
-function validateEmail(email,name) {
+function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		
   return re.test(email);	
@@ -54,13 +54,13 @@ function validateName(name) {
 $('button').click(function() {
 	
   var data = {
+	  subscribed: true,
+	  address: document.getElementById('element').value,
 	  name: document.getElementById('class').value,
-	  email: document.getElementById('element').value
+	  timestamp: Math.floor(Date.now())
   }
-  if(validateEmail(data.email)&&validateName(data.name)) {
-	  
-	  
-	  
+  if(validateEmail(data.address)&&validateName(data.name)) {
+	 	  
   var config = {
     apiKey: "AIzaSyDOUTOPmU1Ocq4q-0UgaDooYB__1PQYqL4",
     authDomain: "mail-list-prashant-blog.firebaseapp.com",
@@ -71,8 +71,9 @@ $('button').click(function() {
   firebase.initializeApp(config);
   var database = firebase.database();
   var ref = database.ref('mail-list');
-  
+  	  
   ref.push(data);
+  	  	 	  
   $('button p').text(function(i, text) {
     return text === "Subscribed!" ? "Subscribe" : "Subscribed!";
   });
@@ -166,11 +167,11 @@ function draw() {
   var ctxbg = document.getElementById('canvasbg').getContext('2d');
 	
   //correct when finished	
-  ctxfr.canvas.width  = window.innerWidth;
-  ctxfr.canvas.height = window.innerHeight;
-	
-  ctxbg.canvas.width  = window.innerWidth;
-  ctxbg.canvas.height = window.innerHeight;
+//  ctxfr.canvas.width  = window.innerWidth;
+//  ctxfr.canvas.height = window.innerHeight;
+//	
+//  ctxbg.canvas.width  = window.innerWidth;
+//  ctxbg.canvas.height = window.innerHeight;
 
   ctxfr.globalCompositeOperation = 'destination-over';
   ctxfr.clearRect(0, 0, canvas.width, canvas.height); // clear canvas
