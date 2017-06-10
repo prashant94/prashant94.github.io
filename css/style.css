@@ -126,7 +126,17 @@ body {
       
       
 }
-
+.row:before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: -5000px;
+  height: 100%;
+  width: 15000px;
+  z-index: -1;
+  background: inherit;
+}
 .row .bottom_text{
     
     color: #ffffff;
@@ -138,6 +148,8 @@ body {
     text-align: center;
 
 }
+
+
 
 .row span {
   position: relative;
@@ -211,6 +223,15 @@ span:nth-child(2) .gate {
 
 span:nth-child(2) .gate:focus,
 span:nth-child(2) .gate:active {
+  text-indent: 0;
+}
+
+span:nth-child(3) .gate {
+  text-indent: 5.313rem;
+}
+
+span:nth-child(3) .gate:focus,
+span:nth-child(3) .gate:active {
   text-indent: 0;
 }
 
