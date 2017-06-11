@@ -46,7 +46,7 @@ function validateEmail(email) {
 }
 
 function validateName(name) {
-	var re = /^.*[a-zA-Z\s]{2,}$/;
+	var re = /^.*[a-zA-Z\s]{3,}$/;
 	return re.test(name)
 }
 
@@ -81,7 +81,21 @@ $('button').click(function() {
   $(this).toggleClass('clicked');	  
   }
 	else {
-		alert("Invalid Details");
+		text = "Invalid Details! <ul>"
+		if(validateEmail(data.address) == false) {
+			text = text.concat("<li>The Email address given doesn't seem to exist</li>")
+		}
+		if(validateName(data.name) == false){
+			text = text.concat("<li>Name is too short</li>")
+		}
+		text = text.concat("</ul>")
+		swal({
+			  title: "Oops! You did something wrong!",
+			  text: text,
+			  type: "error",
+			  html: true,
+			  confirmButtonText: "OK"
+			});
 	}
 });
 
