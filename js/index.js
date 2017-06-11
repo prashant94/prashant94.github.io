@@ -19,9 +19,6 @@ var colors = ['52,168,83', '117,95,147', '199,108,23', '194,62,55', '0,172,212',
   backgroundLine = bgColors[0];
 var backgroundMlt = 0.85;
 
-//min distance for links
-var linkDist = Math.min(canvas.width, canvas.height) / 2.4,
-  lineBorder = 2.5;
 
 //most importantly: number of overall circles and arrays containing them
 var maxCircles = 12,
@@ -47,6 +44,9 @@ canvas1.height = window.innerHeight;
 var canvas2 = document.getElementById('canvas');
 canvas2.width = window.innerWidth;
 canvas2.height = window.innerHeight;
+
+var linkDist = Math.min(canvas.width, canvas.height) / 2.4,
+  lineBorder = 2.5;
 
     
 
