@@ -1,6 +1,8 @@
 
 html,
 body {
+  width: auto;
+  height: auto;
   overflow: hidden;
   background: #262b2e;
   font-size: 100%;	
@@ -131,9 +133,9 @@ body {
   content: "";
   display: block;
   top: 0;
-  left: -5000px;
+  left: auto;
   height: 100%;
-  width: 15000px;
+  width: auto;
   z-index: -1;
   background: inherit;
 }
