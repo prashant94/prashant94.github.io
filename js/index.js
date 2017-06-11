@@ -39,6 +39,17 @@ var circleExp = 1,
   circleExpSp = 0.00004,
   circlePulse = false;
 
+
+var canvas1 = document.getElementById('canvasbg');
+canvas1.width = window.innerWidth;
+canvas1.height = window.innerHeight;
+
+var canvas2 = document.getElementById('canvas');
+canvas2.width = window.innerWidth;
+canvas2.height = window.innerHeight;
+
+    
+
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		
