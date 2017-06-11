@@ -655,9 +655,9 @@ button.clicked svg path {
   @include transition(all 900ms $ease-out-expo);
 }
 .btnn:hover svg rect {
-  stroke-width: 4;
+  stroke-width: 3;
   stroke-dasharray: 110, 312;
-  stroke-dashoffset: 195;
+  stroke-dashoffset: 172;
 }
 
 @media (min-width:320px)  { 
@@ -691,14 +691,16 @@ button.clicked svg path {
 		margin-right: 0.75rem;
 	    margin-left: 0.75rem;
 	    margin-top: 1rem;
-	    margin-bottom: 1rem;
+	    margin-bottom: 0.5rem;
 		width: 6rem;
 		height: 1.5rem;
 		font-size: 0.6rem;
-	    line-height: 1.8rem;
+	    line-height: 1.6rem;
 	}
 	
 	.btnn svg rect {
+		rx: 7;
+		ry: 7;
 		stroke-width: 3;
 		stroke-dasharray: 100, 0;
 		stroke-dashoffset: 0;
@@ -836,7 +838,9 @@ button.clicked svg path {
 	}
 	
 	.btnn svg rect {
-		stroke-width: 4;
+		rx: 4;
+		ry: 4;
+		stroke-width: 2;
 		stroke-dasharray: 422, 0;
 		stroke-dashoffset: 0;
 	}
