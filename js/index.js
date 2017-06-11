@@ -1,6 +1,6 @@
 // min and max radius, radius threshold and percentage of filled circles
 var radMin = 5,
-  radMax = 125,
+  radMax = 25 * Math.ceil(window.innerWidth/300),
   filledCircle = 60, //percentage of filled circles
   concentricCircle = 30, //percentage of concentric circles
   radThreshold = 25; //IFF special, over this radius concentric, otherwise filled
@@ -21,7 +21,7 @@ var backgroundMlt = 0.85;
 
 
 //most importantly: number of overall circles and arrays containing them
-var maxCircles = 12,
+var maxCircles = 3 * Math.ceil(window.innerWidth/350),
   points = [],
   pointsBack = [];
 
